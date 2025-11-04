@@ -7,9 +7,10 @@ app.use(express.static('public'));
 
 
 app.get('/', (req, res)=> {
-    res.render('home');
-})
+    const person = { name: 'Donald Duck', occupation: 'plumber' };
+    res.render('home', { person });
+});
 
 app.listen(PORT, () => {
     console.log(`server running on http://localhost:${PORT}`);
-})
+});
