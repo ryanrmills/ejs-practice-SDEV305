@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- Include partials -->
+     <%- include('partials/header') %>
+     <main>
+        <h2>Welcome!</h2>
+     </main>
+
     <h1>EJS Practice</h1>
     <h2>Hello, <%= person.name %></h2>
     <h3>Occupation: <%= person. occupation %></h3>
@@ -15,5 +22,7 @@
     <%} else {%>
         <p>That's an interesting job!</p>
     <%} %>
+
+    <%- include('partials/footer') %>
 </body>
 </html>
